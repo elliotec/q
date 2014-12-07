@@ -23,5 +23,12 @@
 @import "lists";
 @import "buttons";
 
+// Components
+@import "components/parallax";
+
+// Patterns
+@import "patterns/hero";
+
 // Partials
-@import "partials/header"
+@import "partials/header";
+@import "partials/footer";
