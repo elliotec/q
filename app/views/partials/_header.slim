@@ -38,4 +38,10 @@ header.navigation
           input placeholder=("Enter Search") type="search" /
           button type="submit"
             img alt=("Search Icon") src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/search-icon.png" /
-      a.sign-up href="javascript:void(0)"  Sign Up
+
+      - if signed_in?
+        = current_user.email
+        = button_to 'Sign out', sign_out_path, method: :delete
+      - else
+        = link_to 'Sign in', sign_in_path
+        .sign-up = link_to 'Sign up', sign_up_path
