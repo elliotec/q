@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 ruby '2.1.5'
 
-gem 'better_errors'
+gem 'better_errors', group: :development
 gem 'bourbon'
 gem 'bitters'
 gem 'clearance'
@@ -19,3 +19,5 @@ gem 'spring', group: :development
 gem 'sqlite3'
 gem 'turbolinks'
 gem 'uglifier', '>= 1.3.0'
+
+gem 'minty', git: 'git://github.com/mattdbridges/minty'
